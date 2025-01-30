@@ -28,7 +28,7 @@ import java.util.Locale;
 
 public class AlquilarPropiedad extends AppCompatActivity {
 
-    private EditText entrada, salida;
+    pRivate EditText entrada, salida;
 
 
 
