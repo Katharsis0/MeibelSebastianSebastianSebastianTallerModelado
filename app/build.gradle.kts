@@ -32,14 +32,6 @@ android {
 }
 
 dependencies {
-
-    testImplementation(libs.junit)  // JUnit 4
-    androidTestImplementation(libs.ext.junit)  // AndroidX Test - JUnit
-    androidTestImplementation(libs.espresso.core)  // Espresso
-    androidTestImplementation(libs.test.runner)  // AndroidX Test Runner
-    androidTestImplementation(libs.test.rules)  // AndroidX Test Rules
-    androidTestImplementation(libs.test.core)  // AndroidX Test Core
-    androidTestImplementation(libs.mockito.android)  // Mockito para Android
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -48,6 +40,7 @@ dependencies {
     implementation ("com.google.android.gms:play-services-auth:21.3.0")
     implementation("com.google.android.gms:play-services-maps:19.0.0")
     implementation(libs.play.services.maps)
+    testImplementation ("org.mockito:mockito-core:5.3.1")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

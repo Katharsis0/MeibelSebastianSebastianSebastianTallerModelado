@@ -67,20 +67,4 @@ public class TerminosCondiciones extends AppCompatActivity {
             return insets;
         });
     }
-
-    public boolean isCheckBoxEnabled() {
-        return check1.isEnabled();
-    }
-
-    public void simulateScrollToBottom() {
-        runOnUiThread(() -> check1.setEnabled(true));
-    }
-
-    public void setCheckBoxChecked(boolean checked) {
-        runOnUiThread(() -> check1.setChecked(checked));
-    }
-
-    public boolean canNavigateToSignUp() {
-        return check1.isChecked();
-    }
 }

@@ -83,11 +83,4 @@ public class LucesActivity extends AppCompatActivity {
         button.setBackgroundColor(isOn ? Color.GREEN : Color.WHITE);
         button.setTextColor(isOn ? Color.WHITE : Color.BLACK);
     }
-    public boolean[] getLightStates() {
-        return lightStates;
-    }
-
-    public void setLightService(LightService lightService) {
-        this.lightService = lightService;
-    }
 }
