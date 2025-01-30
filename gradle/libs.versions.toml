@@ -1,4 +1,7 @@
 [versions]
+androidx-test = "1.5.0"
+espresso = "3.5.1"
+mockito = "4.5.1"
 agp = "8.8.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -10,6 +13,7 @@ constraintlayout = "2.2.0"
 playServicesMaps = "19.0.0"
 
 [libraries]
+
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -18,7 +22,10 @@ material = { group = "com.google.android.material", name = "material", version.r
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
-
+test-runner = { module = "androidx.test:runner", version.ref = "androidx-test" }
+test-rules = { module = "androidx.test:rules", version.ref = "androidx-test" }
+test-core = { module = "androidx.test:core", version.ref = "androidx-test" }
+mockito-android = { module = "org.mockito:mockito-android", version.ref = "mockito" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 

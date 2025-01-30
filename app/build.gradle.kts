@@ -32,6 +32,14 @@ android {
 }
 
 dependencies {
+
+    testImplementation(libs.junit)  // JUnit 4
+    androidTestImplementation(libs.ext.junit)  // AndroidX Test - JUnit
+    androidTestImplementation(libs.espresso.core)  // Espresso
+    androidTestImplementation(libs.test.runner)  // AndroidX Test Runner
+    androidTestImplementation(libs.test.rules)  // AndroidX Test Rules
+    androidTestImplementation(libs.test.core)  // AndroidX Test Core
+    androidTestImplementation(libs.mockito.android)  // Mockito para Android
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
