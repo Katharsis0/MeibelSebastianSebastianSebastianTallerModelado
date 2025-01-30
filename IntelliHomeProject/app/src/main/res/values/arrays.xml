@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nacionalidades">
+        <item>Nacionalidad...</item>
+        <item>Argentina</item>
+        <item>Bahamas</item>
+        <item>Belice</item>
+        <item>Brasil</item>
+        <item>Canadá</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Costa Rica</item>
+        <item>Cuba</item>
+        <item>Dominica</item>
+        <item>Ecuador</item>
+        <item>El Salvador</item>
+        <item>Estados Unidos</item>
+        <item>Granada</item>
+        <item>Guatemala</item>
+        <item>Guyana</item>
+        <item>Haití</item>
+        <item>Honduras</item>
+        <item>Jamaica</item>
+        <item>México</item>
+        <item>Nicaragua</item>
+        <item>Panamá</item>
+        <item>Paraguay</item>
+        <item>Perú</item>
+        <item>República Dominicana</item>
+    </string-array>
+
+    <string-array name="pasatiempos">
+        <item>Pasatiempos...</item>
+        <item>Leer libros</item>
+        <item>Escuchar música</item>
+        <item>Jugar videojuegos</item>
+        <item>Cocinar</item>
+        <item>Andar en bicicleta</item>
+        <item>Dibujar o pintar</item>
+        <item>Ver películas o series</item>
+        <item>Practicar deportes</item>
+        <item>Viajar</item>
+        <item>Meditar</item>
+    </string-array>
+
+    <string-array name="amenidades">
+        <item>Amenidades</item>
+        <item>Alberca</item>
+        <item>Gimnasio</item>
+        <item>Jardín</item>
+        <item>Terraza</item>
+        <item>Asador</item>
+        <item>Cuarto de juegos</item>
+        <item>Estacionamiento techado</item>
+        <item>Sistema de seguridad</item>
+        <item>Área de lavado</item>
+        <item>Oficina o estudio</item>
+    </string-array>
+
+</resources>
