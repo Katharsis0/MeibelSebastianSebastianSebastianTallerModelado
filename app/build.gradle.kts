@@ -6,13 +6,6 @@ android {
     namespace = "com.example.registro"
     compileSdk = 35
 
-    lint {
-        baseline = file("lint-baseline.xml")
-        abortOnError = false
-        warningsAsErrors = false
-        disable.add("DefaultLocale") // Suppress the DefaultLocale warning globally
-    }
-
     defaultConfig {
         applicationId = "com.example.registro"
         minSdk = 24
@@ -22,8 +15,6 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
-
 
     buildTypes {
         release {
