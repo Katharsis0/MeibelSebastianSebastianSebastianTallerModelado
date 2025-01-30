@@ -2,7 +2,7 @@ name: TutorialCI
 
 on:
   push:
-    branches: [ "develop" , "TestCI" ]
+    branches: [ "develop" , "SebasAPruebasUnitarias" ]
   pull_request:
     branches: [ "develop" ]
 
