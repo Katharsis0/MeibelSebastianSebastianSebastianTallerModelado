@@ -26,6 +26,7 @@ test-runner = { module = "androidx.test:runner", version.ref = "androidx-test" }
 test-rules = { module = "androidx.test:rules", version.ref = "androidx-test" }
 test-core = { module = "androidx.test:core", version.ref = "androidx-test" }
 mockito-android = { module = "org.mockito:mockito-android", version.ref = "mockito" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 
