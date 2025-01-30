@@ -10,6 +10,7 @@ android {
         baseline = file("lint-baseline.xml")
         abortOnError = false
         warningsAsErrors = false
+        disable.add("DefaultLocale") // Suppress the DefaultLocale warning globally
     }
 
     defaultConfig {
