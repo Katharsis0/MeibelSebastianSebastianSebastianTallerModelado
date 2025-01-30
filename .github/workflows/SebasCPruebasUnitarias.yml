@@ -1,4 +1,4 @@
-name: TutorialCI
+name: SebasCPruebasUnitarias
 
 on:
   push:
