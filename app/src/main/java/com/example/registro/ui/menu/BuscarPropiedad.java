@@ -16,6 +16,7 @@ import com.example.registro.R;
 
 import java.sql.Array;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class BuscarPropiedad extends AppCompatActivity {
 
@@ -67,28 +68,26 @@ public class BuscarPropiedad extends AppCompatActivity {
                 searchList = new ArrayList<>();
 
 
-                if (newText.length()>0){
-                    for (int i=0; i <arrayList.size(); i++){
-                        if(arrayList.get(i).getNombrePropiedad().toUpperCase().contains(newText.toUpperCase())){
+                if (!newText.isEmpty()){
+                    for (int i = 0; i < arrayList.size(); i++) {
+                        if (arrayList.get(i).getNombrePropiedad().toUpperCase(Locale.ROOT).contains(newText.toUpperCase(Locale.ROOT))) {
                             ModelClass modelClass = new ModelClass();
                             modelClass.setNombrePropiedad(arrayList.get(i).getNombrePropiedad());
                             modelClass.setDescripcion(arrayList.get(i).getDescripcion());
                             modelClass.setImg(arrayList.get(i).getImg());
                             searchList.add(modelClass);
-
                         }
                     }
                     RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(BuscarPropiedad.this);
                     recyclerView.setLayoutManager(layoutManager);
 
-                    Adapter adapter = new Adapter(BuscarPropiedad.this,searchList);
+                    Adapter adapter = new Adapter(BuscarPropiedad.this, searchList);
                     recyclerView.setAdapter(adapter);
-                }
-                else{
+                } else {
                     RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(BuscarPropiedad.this);
                     recyclerView.setLayoutManager(layoutManager);
 
-                    Adapter adapter = new Adapter(BuscarPropiedad.this,searchList);
+                    Adapter adapter = new Adapter(BuscarPropiedad.this, arrayList); // Use arrayList instead of searchList
                     recyclerView.setAdapter(adapter);
                 }
                 return false;
