@@ -6,6 +6,10 @@ android {
     namespace = "com.example.registro"
     compileSdk = 35
 
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+
     defaultConfig {
         applicationId = "com.example.registro"
         minSdk = 24
@@ -16,9 +20,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    lint {
-        baseline = file("lint-baseline.xml")
-    }
+
 
     buildTypes {
         release {
